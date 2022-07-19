@@ -5,3 +5,27 @@ git ignore es para no enviar al repositorio los archivos de paquete que
 puedan ocupar mucho espacio
 
 package.json indica nombre del proyecto version y scripts
+
+carpeta src en esta carpeta se encuentra todo el codigo del proyecto 
+ (componentes, estilos, configuraciones de entornos, archivos de traducciones, etc.)
+ aqui esta index.html el principal a partir del cual se carga el resto de la app
+
+ carpeta app 
+ En esta carpeta se encuentran los componentes,  módulos y archivos de rutas.
+Se deberán crear tantas subcarpetas como módulos y/o vistas tenga la aplicación
+
+componentes: son los dif eleemtnos que componen la app ej 
+una tabla venbtana modal o formulario los componentes estan formados por 
+html css y typescript html se define como se ve el componente typescript el 
+comportamiento y css estilos del componente 
+
+modulos: en estos modulos module.ts se importan los componentes que pertenecen a dicho modulo
+organiza la aplicacion y reutiliza componentes pertenecientes a otros modulos 
+puede crearse un modulo por cada vista de la aplicacion y adicionalmente se puede 
+crear un modulo que englobe a los componentenes comunes o compartidos 
+por varias vistas disponer de dif modulos al crear una app
+vendra un unico modulo por defecto app.module.ts 
+archivos de rutas nos permiten indicar las rutas que tendranlas dif vistas de 
+la app las rutas se configuran dentro de archivos llamados routing.module.ts
+carpeta asstes esta dedicada a guardar los diferentes recursos que necesite una app 
+como imagens iconos tipos de fuentes o archivos de traducciones si la app requiere idiomas 
