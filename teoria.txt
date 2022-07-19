@@ -1,0 +1,7 @@
+e2e ya no esta mas apartir de la version 12 en Angular
+node_modules se incluyen todos los modules al haceer npm install 
+src es la carpeta en la que se desarrolla la aplicacion 
+git ignore es para no enviar al repositorio los archivos de paquete que 
+puedan ocupar mucho espacio
+
+package.json indica nombre del proyecto version y scripts

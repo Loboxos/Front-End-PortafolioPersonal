@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FronEndEstatico</title>
+  <link rel="stylesheet" href="estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,200;1,700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <img class=logo src="./imagenes/descarga.png" alt="logo" >
+      <div class="social-icons">
+        <a href="https://www.instagram.com/cristianvilla._.15/?hl=es" target="_blank">
+          <img class="icono" src="./imagenes/instagram.png" alt="instagram"></a>
+         <a href="https://www.instagram.com/cristianvilla._.15/?hl=es" target="_blank">
+         <img class="icono" src="./imagenes/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/cristianvilla._.15/?hl=es" target="_blank" >
+        <img class="icono" src="./imagenes/github.png" alt="github"></a>
+        <a href="https://www.instagram.com/cristianvilla._.15/?hl=es" target="_blank" >
+        <img class="icono" src="./imagenes/linkedin.png" alt="linkedin"></a>
+        <a href="https://www.instagram.com/cristianvilla._.15/?hl=es"target="_blank" >
+        <img class="icono" src="./imagenes/twitter.png" alt="twitter"></a>
+        <a href="#"><img class="icono" src="./imagenes/usuario.png" alt="usuario"></a>
+    </div>
+    </nav>
+    <div class="main-fondo">
+      <div class="banner">
+        <h1>CRISTIAN VILLA</h1>
+        <h2>Estudiante de informatica</h2>
+    </div>
+  </header>
+
+ 
+  <div class="acercade">
+    
+    <img src="./imagenes/Imagendeperfil.png" class ="img-fluid" alt="foto_de_perfil">
+<!---
+    <button type="button" class="btn btn-dark">Dark
+    <form>
+      <div class="form-group">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+      </div>
+      <div class="form-group">
+          <label for="inputPassword">Password</label>
+          <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+      </div>
+      <div class="form-group">
+          <label class="form-check-label"><input type="checkbox"> Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+    </button>
+    ---->
+    <h1>Acerca de</h1>
+  
+
+<button style="position: absolute; top: 161px; left:244px;"type="button" class="btn btn-outline-dark" onclick="cambiar_parrafo()">Editar</button>
+        <div>
+          <p id="text-acercade">rellenar 
+            <br>“rellenar tambien xd d...”</p>
+        </div>
+      <div>
+       <input id="edit-acercade" type="text" oninput="myFuncion2(this.value)"style="display:none">
+      </div>
+ <!---- <div class ="btn-edit" onclick="cambiar_parrafo()">
+   <a href="#"class="btn btn-right">
+    <i class="fa fa-pen"></i>
+   </a>
+    </div>
+    <div>
+      <p id="text-acercade">rellenar 
+        <br>“rellenar tambien xd...”</p>
+    </div>
+  <div>
+   <input id="edit-acercade" type="text" oninput="myFuncion2(this.value)"style="display:none">
+  </div>
+-->
+   <!--<h1>Acerca de</h1>
+    <p>rellenar 
+      <br>“rellenar tambien xd...”</p>-->
+  </div>
+
+  
+  <div class="exp-y-ed">
+    
+    <h1>EXPERIENCIA</h1>
+    <p>comerciante y un par de cosas mas</p>
+    <h1>EDUCACION</h1>
+    <p>Colegio gral M belgrano</p>
+    <p>Universidad nacional de salta</p>
+  </div>
+  <div class="habilidades">
+    <h1>HABILIDADES Y CONTRAS</h1> 
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <p>tan tan tan</p>
+   </div>
+   <div class="proyectos">
+    <h1>PROYECTOS REALIZADOS</h1>
+    <p>Proyecto cine en c </p>
+    <p>Proyecto cine en java </p>
+   </div>
+
+   <script>
+    function cambiar_parrafo(){
+     document.getElementById("edit-acercade").style.display="block";
+    let texto=document.getElementById("text-acercade").innerText;
+    console.log(texto);
+    }
+    function myFuncion2(valor){
+      document.getElementById("text-acercade").innerText=valor;
+    }
+  function logMessage(message){
+    console.log(message + "<br>");
+  }
+  //controla si se presiono un enter 
+  let textarea = document.getElementById("edit-acercade")
+  textarea.addEventListener('keyup', (e) => {
+    logMessage(`key "${e.key}" released [event: keyup]`);
+    if(e.key=="Enter"){
+      document.getElementById("edit-acercade").style.display="none"
+    }
+  });
+  //cARGA
+ function showFile(input){
+  let file = input.files[0];
+  alert(`File name: : ${file.name}`);
+  alert(`Last modified: ${file.lastModified}`);
+
+  let reader = new fileReader();
+  reader.readAsText(file);
+  reader.onload=function() {
+    console.log(reader.result);
+    document.getElementById("text-acercade").innerText=reader.result;
+  };
+  reader.onerror=function() {
+    console.log(reader.error);
+  };
+}
+      </script>
+      
+
+ <!-- Bootstrap JS -->
+ <script src="./dist/js/bootstrap.bundle.min.js"></script>
+ <script src="./output/app.js"></script>
+</body>
+</html>
+
