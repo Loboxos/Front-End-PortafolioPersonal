@@ -1,0 +1,22 @@
+.acercade{
+    position: relative;
+    text-align: center;
+    top:660px;
+}
+.acercade h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 60px;
+    color: #DA9595;
+}
+.acercade p{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 20px; 
+line-height: 23px;
+text-align: center;
+}

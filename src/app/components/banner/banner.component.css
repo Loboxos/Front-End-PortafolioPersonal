@@ -1,0 +1,42 @@
+
+.conteinerBanner {
+    position:absolute; 
+    width: 100%;
+   height:660px;
+   top:80px;
+}
+.conteinerBanner.img-fluid:before{
+    content:"";
+    width: 100%;
+    height: 660px;
+    position: absolute;
+   background: rgba(0, 0, 0, 0.6);
+}
+.img-fluid{
+    height:660px;
+}
+.conteinerBanner h1{
+    position: absolute;
+    top: 180px;
+    left: 5%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+.conteinerBanner h2{
+    position: absolute;
+    top:240px;
+    left: 5%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+/*img:before{   
+    background: rgb(187, 76, 76);
+
+}*/
