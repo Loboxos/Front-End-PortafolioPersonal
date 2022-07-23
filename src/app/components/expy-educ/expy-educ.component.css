@@ -1,0 +1,24 @@
+.row{
+    border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid; 
+  border-left-style: solid;
+    border-left-style: solid;
+    border-radius: 5px;
+    position: absolute;
+    top:1009px;
+    --bs-gutter-x:0;
+    background-color:#ffffff;
+}
+.row h1{
+    margin:10px;
+    Text-align: center;
+}
+#call{
+    height: 80px;
+    float: right
+}
+#negocio{
+    height: 80px;
+    float: right;
+}

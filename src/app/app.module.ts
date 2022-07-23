@@ -9,6 +9,7 @@ import { BarraPrincComponent } from './components/barra-princ/barra-princ.compon
 import { IconosSocComponent } from './components/iconos-soc/iconos-soc.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
+import { ExpyEducComponent } from './components/expy-educ/expy-educ.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
     BarraPrincComponent,
     IconosSocComponent,
     BannerComponent,
-    AcercaDeComponent
+    AcercaDeComponent,
+    ExpyEducComponent
   ],
   imports: [
     BrowserModule,
