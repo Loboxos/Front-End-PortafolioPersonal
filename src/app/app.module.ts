@@ -10,6 +10,8 @@ import { IconosSocComponent } from './components/iconos-soc/iconos-soc.component
 import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExpyEducComponent } from './components/expy-educ/expy-educ.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HysComponent } from './components/hys/hys.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { ExpyEducComponent } from './components/expy-educ/expy-educ.component';
     IconosSocComponent,
     BannerComponent,
     AcercaDeComponent,
-    ExpyEducComponent
+    ExpyEducComponent,
+    HysComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
