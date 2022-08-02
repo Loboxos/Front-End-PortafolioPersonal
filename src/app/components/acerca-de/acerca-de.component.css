@@ -1,29 +1,27 @@
-
-.acercade{
-    display: flex;
-    text-align: center;
-     height: 306px;
-     background: #272727;
+.row{
+    --bs-gutter-x: 0;
+    background-color:#272727;
 }
 .img-fluid{
+    height:132px;
     position:absolute;
     top:650px;
     display:flex;
     left:46%;
+    width: 163px;
 }
 
-.acercade h1{
+.row h1{
+    text-align: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 40px;
     line-height: 60px;
     color: #DA9595;
-    top: 72%;
-    left: 46%;
-    position: absolute;
+
 }
-.acercade p{
+.row p{
 color: #DA9595;
 font-family: 'Roboto';
 font-style: normal;
@@ -31,7 +29,4 @@ font-weight: 300;
 font-size: 20px; 
 line-height: 23px;
 text-align: center;
-position: absolute;
-left: 46%;
-top: 80%;
 }
