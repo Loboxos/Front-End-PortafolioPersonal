@@ -1,17 +1,17 @@
 
 .acercade{
-    position: relative;
+    display: flex;
     text-align: center;
+     height: 306px;
+     background: #272727;
+}
+.img-fluid{
+    position:absolute;
     top:650px;
+    display:flex;
+    left:46%;
 }
-.fondo{
-    position: absolute;
-    top: 729px;
-    width: 100%;
-    height: 280px;
-    background-color: #272727;
-    z-index: -1;
-}
+
 .acercade h1{
     font-family: 'Roboto';
     font-style: normal;
@@ -19,6 +19,9 @@
     font-size: 40px;
     line-height: 60px;
     color: #DA9595;
+    top: 72%;
+    left: 46%;
+    position: absolute;
 }
 .acercade p{
 color: #DA9595;
@@ -28,4 +31,7 @@ font-weight: 300;
 font-size: 20px; 
 line-height: 23px;
 text-align: center;
+position: absolute;
+left: 46%;
+top: 80%;
 }

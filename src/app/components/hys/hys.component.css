@@ -1,7 +1,5 @@
 .row{
     padding:20px;
-    position: absolute;
-    top:2535px;
     --bs-gutter-x:0;
 }
 .row h1{

@@ -3,22 +3,23 @@
   width:100% ;
 }
 .conteinerBanner {
-    position:absolute; 
     width: 100%;
-   height:650px;
-   top:80px;
+   display: flex;
+
 }
 .conteinerBanner:before{
     content:"";
     width: 100%;
     height: 650px;
     position: absolute;
+    display: flex;
+    top:80px;
    background: rgba(0, 0, 0, 0.6);
 }
 
 .conteinerBanner h1{
     position: absolute;
-    top: 200px;
+    top:278px;
     left: 5%;
     font-family: 'Roboto';
     font-style: normal;
@@ -28,7 +29,7 @@
 }
 .conteinerBanner h2{
     position: absolute;
-    top:300px;
+    top:387px;
     left: 5%;
     font-family: 'Roboto';
     font-style: normal;
