@@ -1,5 +1,6 @@
 .row{
     background:aliceblue;
+    --bs-gutter-x:0;
 }
 footer{
     color:rgb(51, 51, 51);
