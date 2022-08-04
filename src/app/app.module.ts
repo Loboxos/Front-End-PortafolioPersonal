@@ -12,6 +12,8 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExpyEducComponent } from './components/expy-educ/expy-educ.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './components/hys/hys.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { HysComponent } from './components/hys/hys.component';
     BannerComponent,
     AcercaDeComponent,
     ExpyEducComponent,
-    HysComponent
+    HysComponent,
+    ProyectosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

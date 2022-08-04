@@ -1,32 +1,16 @@
-.row{
-    --bs-gutter-x: 0;
-    background-color:#272727;
-}
-.img-fluid{
-    height:132px;
-    position:absolute;
-    top:650px;
-    display:flex;
-    left:46%;
-    width: 163px;
-}
-
-.row h1{
+section{
     text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 60px;
-    color: #DA9595;
-
+    background-color: #272727;
 }
-.row p{
-color: #DA9595;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 300;
-font-size: 20px; 
-line-height: 23px;
-text-align: center;
+#Fp{
+    top: -78px;
+    left:-5px;
+    position: relative;
+}
+
+section p{
+    margin-block-end:0;
+} 
+section p,h1 {
+    color: #fff;
 }
