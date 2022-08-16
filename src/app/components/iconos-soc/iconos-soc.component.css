@@ -1,5 +1,5 @@
 .iconoSoc{
-    display: inline-flex;
+    display: flex;
 }
 .iconoSoc a img{
 color: rgb(255, 255, 255);
@@ -8,3 +8,8 @@ float:right;
 margin-top:20px;
 /*transition: .5s;*/
 }
+.btn-outline-light{
+    margin-top: 20px;
+}
+
+

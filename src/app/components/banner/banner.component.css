@@ -42,3 +42,27 @@
     background: rgb(187, 76, 76);
 
 }*/
+@media(max-width:396px){
+    .conteinerBanner:before{
+        content:"";
+        width: 100%;
+        height: 650px;
+        position: absolute;
+        display: flex;
+        top:118px;
+       background: rgba(0, 0, 0, 0.6);
+    }
+    
+}
+@media(max-width:276px){
+    .conteinerBanner:before{
+        content:"";
+        width: 100%;
+        height: 650px;
+        position: absolute;
+        display: flex;
+        top:177px;
+       background: rgba(0, 0, 0, 0.6);
+    }
+    
+}
