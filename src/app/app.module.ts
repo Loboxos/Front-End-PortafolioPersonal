@@ -18,7 +18,8 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from './servicios/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -33,21 +34,22 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     HysComponent,
     ProyectosComponent,
     FooterComponent,
-
     IniciarSesionComponent,
     PortafolioComponent,
-    
-    
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule
   ],
 
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

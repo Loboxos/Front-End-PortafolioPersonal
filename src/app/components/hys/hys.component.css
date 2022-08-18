@@ -1,4 +1,8 @@
 .row{
+    border-right-style: solid;
+    border-bottom-style: solid; 
+    border-left-style: solid;
+      border-radius: 5px;
     padding:20px;
     --bs-gutter-x:0;
 }

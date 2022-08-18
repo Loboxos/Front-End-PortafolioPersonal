@@ -2,15 +2,15 @@ section{
     text-align: center;
 }
 .row{
-    border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid; 
-  border-left-style: solid;
-    border-left-style: solid;
+   border:solid;
     border-radius: 5px;
     top:1009px;
     --bs-gutter-x:0;
-    background-color:#ffffff;
+    background-color: #9db0b4;
+
+}
+.texttitle{
+    border:double;
 }
 .row h1{
     Text-align: center;
