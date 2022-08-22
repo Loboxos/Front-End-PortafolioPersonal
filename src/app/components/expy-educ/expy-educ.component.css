@@ -1,6 +1,11 @@
 section{
     text-align: center;
 }
+.menu-exp{
+    display: flex;
+    justify-content:space-between;
+}
+
 .row{
    border:solid;
     border-radius: 5px;
@@ -11,10 +16,9 @@ section{
 }
 .texttitle{
     border:double;
+    text-align:center;
 }
-.row h1{
-    Text-align: center;
-}
+
 #call{
     height: 80px;
     float: right

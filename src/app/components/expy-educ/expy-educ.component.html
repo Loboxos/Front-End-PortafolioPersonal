@@ -1,84 +1,85 @@
-<div class="row">
-       <h1 class="texttitle">Experiencia Laboral<br></h1>
-       <div class="col-lg-12">
-           <ul>
-                 <li>
-                    <img src="../../../assets/headset_icon-icons.com_69367.png" id="call">
-                    <h2>Call Center</h2>-<h3>(2022-2022)</h3> 
-                 </li>
-                 <p>
-                   Atencion al cliente
-                 </p>
-           </ul>
-           <ul>
-            <li>
-               <img src="../../../assets/alquiler-3.png" id="negocio">
-               <h2>Emprendedor</h2> - <h3>(2019-2022)</h3> 
-            </li>
-            <p>
-              Atencion al cliente<br>Vendedor<br> Repositor
-            </p>
-      </ul>
-      <ul>
-        <li>
-           <img src="../../../assets/game-illustration-on-a-transparent-background-premium-quality-symbols-line-flat-color-icon-for-concept-and-graphic-design-vector.jpg" id="call">
-           <h2>Tecnico en consolas</h2> - <h3>(2018-2022)</h3> 
-        </li>
-        <p>
-Reparacion de consolas de videojuegos <br> 
-hardware
-        </p>
-  </ul>
-       </div>
-       <h1 class="texttitle">Educacion<br></h1>
-       <div class="col-lg-12">
-           <ul>
-                 <li>
-                    <img src="../../../assets/logo-colegio.png" id="call">
-                    <h2>Colegio "Gral. M. belgrano" N°5095</h2> - <h3>(2014-2018)</h3> 
-                 </li>
-                 <p>
-Titulo de Bachiller En Ciencias Naturales                 </p>
-           </ul>
-           <ul>
-            <li>
-               <img src="../../../assets/escudoUNSa.jpg" id="negocio">
-               <h2>Universidad Nacional De Salta</h2> - <h3>(2019-ACT)</h3> 
-            </li>
-            <p>
-Licenciatura en Analisis de Sistemas            </p>
-      </ul>
-      <ul>
-        <li>
-           <img src="../../../assets/banner-ok-argentina-programa.jpg" id="call">
-           <h2>Argentina programa</h2> - <h3>(2022-ACT)</h3> 
-        </li>
-        <p>
-full stack jr developer        </p>
-  </ul>
-  <ul>
-   <li>
-      <img src="../../../assets/milpro.jpg" id="call">
-      <h2>Mil Programadores</h2> - <h3>(2022-ACT)</h3> 
-   </li>
-   <p>
-   Introduccion a la programacion en java (finalizado)<br>
-   Introduccion a la programacion en python (en curso)
-   </p>
-</ul>
-<ul>
-   <li>
-      <img src="../../../assets/logo-google-activate.png" id="call">
-      <h2>Otros cursos</h2> - <h3>(2022-ACT)</h3> 
-   </li>
-   <p>
-    Protege tu Negocio: Ciberseguridad en el teletrabajo <br>
-    Digitaliza paso a paso tu negocio con herramientas de Google<br>
-    Curso de Desarrollo de Apps Moviles<br>
-    Curso de introduccion al Desarrollo web: HTML Y CSS (1/2)<br>
-    Curso de introduccion al Desarrollo web: HTML Y CSS (2/2)
+<div class="row"  >
+  <h1 class="texttitle">Experiencia Laboral<br /></h1>
+  <div class="col-lg-12" class="menu-exp">
+   <button type="button"class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+Nueva Experiencia
+   </button>
+  </div>
+  <p><br></p>
+  <div class="col-lg-12">
+    <ul *ngFor="let Experiencia of expe">
+      <li>
+        <img src="../../../assets/trabajoopng.png" id="call" />
+        
+      <h2 class="title">{{Experiencia.nombreE}}  
+        <button type="button" class="btn btn-dark" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged">
+          <i class="bi bi-pen">Editar</i>
+        </button>
+        <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+          <i class="bi bi-trash-fill"></i> BORRAR</button>
+      </h2>
+        <p>({{Experiencia.fechaE}})</p>
+      </li>
+      <h3>{{Experiencia.descripcionE}}</h3>  
+   </ul>
+  
 
-   </p>
-</ul>
-       </div>
+
+  <h1 class="texttitle">Educacion<br /></h1>
+  <div class="col-lg-12">
+    <ul>
+      <li>
+        <img src="../../../assets/logo-colegio.png" id="call" />
+        <h2>Colegio "Gral. M. belgrano" N°5095</h2>
+        -
+        <h3>(2014-2018)</h3>
+      </li>
+      <p>Titulo de Bachiller En Ciencias Naturales</p>
+    </ul>
+    <ul>
+      <li>
+        <img src="../../../assets/escudoUNSa.jpg" id="negocio" />
+        <h2>Universidad Nacional De Salta</h2>
+        -
+        <h3>(2019-ACT)</h3>
+      </li>
+      <p>Licenciatura en Analisis de Sistemas</p>
+    </ul>
+    <ul>
+      <li>
+        <img src="../../../assets/banner-ok-argentina-programa.jpg" id="call" />
+        <h2>Argentina programa</h2>
+        -
+        <h3>(2022-ACT)</h3>
+      </li>
+      <p>full stack jr developer</p>
+    </ul>
+    <ul>
+      <li>
+        <img src="../../../assets/milpro.jpg" id="call" />
+        <h2>Mil Programadores</h2>
+        -
+        <h3>(2022-ACT)</h3>
+      </li>
+      <p>
+        Introduccion a la programacion en java (finalizado)<br />
+        Introduccion a la programacion en python (en curso)
+      </p>
+    </ul>
+    <ul>
+      <li>
+        <img src="../../../assets/logo-google-activate.png" id="call" />
+        <h2>Otros cursos</h2>
+        -
+        <h3>(2022-ACT)</h3>
+      </li>
+      <p>
+        Protege tu Negocio: Ciberseguridad en el teletrabajo <br />
+        Digitaliza paso a paso tu negocio con herramientas de Google<br />
+        Curso de Desarrollo de Apps Moviles<br />
+        Curso de introduccion al Desarrollo web: HTML Y CSS (1/2)<br />
+        Curso de introduccion al Desarrollo web: HTML Y CSS (2/2)
+      </p>
+    </ul>
+  </div>
 </div>

@@ -20,6 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './servicios/interceptor-service';
+import{NewExperienciaComponent}from './components/expy-educ/new-experiencia.component';
+import { EditExperienciaComponent } from './components/expy-educ/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { interceptorProvider } from './servicios/interceptor-service';
     FooterComponent,
     IniciarSesionComponent,
     PortafolioComponent,
-  
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    
   ],
   imports: [
     BrowserModule,
