@@ -16,27 +16,31 @@
     top:80px;
    background: rgba(0, 0, 0, 0.6);
 }
+.row{
+    position: absolute;
+    top:300px;
+    --bs-gutter-x:0;
+    overflow: hidden;
+    width: 100%;
+}
+.row h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: #FFFFFF;
+  
+   
+}
+.row h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: #FFFFFF;
+}
 
-.conteinerBanner h1{
-    position: absolute;
-    top:278px;
-    left: 5%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 50px;
-    color: #FFFFFF;
-}
-.conteinerBanner h2{
-    position: absolute;
-    top:387px;
-    left: 5%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 50px;
-    color: #FFFFFF;
-}
+
 
 /*img:before{   
     background: rgb(187, 76, 76);
@@ -52,8 +56,8 @@
         top:118px;
        background: rgba(0, 0, 0, 0.6);
     }
-    
 }
+
 @media(max-width:276px){
     .conteinerBanner:before{
         content:"";
