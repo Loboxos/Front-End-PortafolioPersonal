@@ -7,7 +7,7 @@ import { persona } from '../model/persona.mode';
   providedIn: 'root'
 })
 export class PersonaService {
-URL = 'http://localhost:8080/personas/';
+URL = 'https://bkdportafoliop1.herokuapp.com/personas/';
 
 constructor(private http:HttpClient) { }
 public getPersona():Observable<persona>{
