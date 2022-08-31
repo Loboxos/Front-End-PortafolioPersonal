@@ -26,6 +26,8 @@ import { NewEducacionComponent } from './components/expy-educ/new-educacion.comp
 import { EditeducacionComponent } from './components/expy-educ/editeducacion.component';
 import { NewproyectosComponent } from './components/proyectos/newproyectos.component';
 import { EditproyectosComponent } from './components/proyectos/editproyectos.component';
+import { NewskillsComponent } from './components/hys/newskills.component';
+import { EditskillsComponent } from './components/hys/editskills.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { EditproyectosComponent } from './components/proyectos/editproyectos.com
     EditeducacionComponent,
     NewproyectosComponent,
     EditproyectosComponent,
+    NewskillsComponent,
+    EditskillsComponent,
     
   ],
   imports: [

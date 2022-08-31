@@ -4,6 +4,8 @@ import { EditExperienciaComponent } from './components/expy-educ/edit-experienci
 import { EditeducacionComponent } from './components/expy-educ/editeducacion.component';
 import { NewEducacionComponent } from './components/expy-educ/new-educacion.component';
 import { NewExperienciaComponent } from './components/expy-educ/new-experiencia.component';
+import { EditskillsComponent } from './components/hys/editskills.component';
+import { NewskillsComponent } from './components/hys/newskills.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component'; 
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { EditproyectosComponent } from './components/proyectos/editproyectos.component';
@@ -18,7 +20,9 @@ const routes: Routes = [
   { path: 'nuevaedu', component: NewEducacionComponent},
   { path: 'editedu/:id', component: EditeducacionComponent},
   {path: 'nuevoproy',component: NewproyectosComponent},
-  { path: 'editproy/:id',component:EditproyectosComponent}
+  { path: 'editproy/:id',component:EditproyectosComponent},
+  {path: 'nuevaski',component:NewskillsComponent},
+  { path: 'editski/:id',component:EditskillsComponent}
  
   
 ];

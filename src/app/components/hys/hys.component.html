@@ -1,93 +1,28 @@
 <div class="row">
   <h1>HARD Y SOFT SKILLS</h1>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress
-      [percent]="85"
+  <button type="button"class="btn btn-dark" routerLink="/nuevaski" *ngIf="isLogged">
+    Nueva habilidad
+       </button>
+       <div *ngFor="let Skills of ski">
+        <div class="col-sm-4 col-md-4 col-lg-4">
+    <circle-progress 
+      [percent]=Skills.porcentaje
       [radius]="100"
       [showUnits]="false"
       [outerStrokeWidth]="16"
       [innerStrokeWidth]="8"
-      [title]="'Perseverancia'"
+      [title]= 'Skills.nombreSkill'
       [outerStrokeColor]="'#2134ad'"
       [innerStrokeColor]="'#404880'"
       [animation]="true"
       [animationDuration]="300"
       [showSubtitle]="false"
     ></circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress
-      [percent]="85"
-      [radius]="100"
-      [showUnits]="false"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [title]="'Constancia'"
-      [outerStrokeColor]="'#2134ad'"
-      [innerStrokeColor]="'#404880'"
-      [animation]="true"
-      [animationDuration]="300"
-      [showSubtitle]="false"
-    ></circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress
-      [percent]="50"
-      [radius]="100"
-      [showUnits]="false"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [title]="'Creatividad'"
-      [outerStrokeColor]="'#2134ad'"
-      [innerStrokeColor]="'#404880'"
-      [animation]="true"
-      [animationDuration]="300"
-      [showSubtitle]="false"
-    ></circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress
-      [percent]="90"
-      [radius]="100"
-      [showUnits]="false"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [title]="'Colaboracion'"
-      [outerStrokeColor]="'#2134ad'"
-      [innerStrokeColor]="'#404880'"
-      [animation]="true"
-      [animationDuration]="300"
-      [showSubtitle]="false"
-    ></circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress
-      [percent]="30"
-      [radius]="100"
-      [showUnits]="false"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [title]="'Comunicacion'"
-      [outerStrokeColor]="'#2134ad'"
-      [innerStrokeColor]="'#404880'"
-      [animation]="true"
-      [animationDuration]="300"
-      [showSubtitle]="false"
-    ></circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress
-      [percent]="70"
-      [radius]="100"
-      [showUnits]="false"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [title]="'Trabajo en equipo'"
-      [outerStrokeColor]="'#2134ad'"
-      [innerStrokeColor]="'#404880'"
-      [animation]="true"
-      [animationDuration]="300"
-      [showSubtitle]="false"
-    ></circle-progress>
-  </div>
+    <button type="button" class="btn btn-dark" routerLink="/editski/{{Skills.id}}" *ngIf="isLogged">
+      <i class="bi bi-pen">Editar</i>
+    </button>
+    <button class="btn btn-danger" (click)="delete(Skills.id)" *ngIf="isLogged">
+      <i class="bi bi-trash-fill"></i> BORRAR</button>
+    </div>
+       </div>
 </div>
