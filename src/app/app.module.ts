@@ -28,6 +28,7 @@ import { NewproyectosComponent } from './components/proyectos/newproyectos.compo
 import { EditproyectosComponent } from './components/proyectos/editproyectos.component';
 import { NewskillsComponent } from './components/hys/newskills.component';
 import { EditskillsComponent } from './components/hys/editskills.component';
+import { EditacercadeComponent } from './components/acerca-de/editacercade.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { EditskillsComponent } from './components/hys/editskills.component';
     EditproyectosComponent,
     NewskillsComponent,
     EditskillsComponent,
+    EditacercadeComponent,
     
   ],
   imports: [

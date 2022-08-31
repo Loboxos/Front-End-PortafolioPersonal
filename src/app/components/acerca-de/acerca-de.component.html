@@ -1,11 +1,16 @@
- 
+ <div *ngFor="let Persona of persona">
     <section>
-      <img src="../../../assets/Imagendeperfil.png" id="Fp" alt="un roble">
-      <h1 id="nombre">{{persona.nombre}} {{persona.apellido}}</h1>
+      <img src="{{Persona.img}}" id="Fp" alt="un roble">
+      <div>
+      <button type="button"class="btn btn-light" routerLink="/editacercade/{{Persona.id}}"*ngIf="isLogged">
+        Editar Imagen
+           </button>
+           <h1 id="nombre">{{Persona.nombre}} {{Persona.apellido}}</h1>
+        </div>
       <p>Estudiante de informatica</p>
       <h1>Acerca de</h1>
       <p>Tengo 21 años comenze en el mundo de la programacion a los 18 y aun sigo capacitandome <br><span>
       en mis tiempos libres me gusta jugar al futbol y jugar videojuegos como toda persona que le gustan las computadoras ...
       </span></p>
     </section>
-    
+ </div>
