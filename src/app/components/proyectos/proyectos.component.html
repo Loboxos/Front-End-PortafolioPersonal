@@ -15,4 +15,26 @@
     <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 parte2">
         <img src="../../../assets/Captura de pantalla (78).png"class="img-fluid img-proyecto">
     </div>
+    <div>
+    <button type="button"class="btn btn-dark" routerLink="/nuevoproy" *ngIf="isLogged">
+        Nuevo proyecto
+           </button>
+    </div>
+           <div *ngFor="let Proyectos of proyectos">
+      
+           <div class="col-sm-12 col-md-7 col-lg-7 parte1" >
+            <h1>{{Proyectos.nombreP}}
+                <button type="button" class="btn btn-dark" routerLink="/editproy/{{Proyectos.id}}" *ngIf="isLogged">
+                <i class="bi bi-pen">Editar</i>
+              </button>
+              <button class="btn btn-danger" (click)="delete(Proyectos.id)" *ngIf="isLogged">
+                <i class="bi bi-trash-fill"></i> BORRAR</button>
+            </h1>
+            <a href={{Proyectos.UrlP}} style="color:rgb(51, 51, 61)" target="_blank">Click aqui para ir al Proyecto</a>
+         </div>
+         <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 parte2">
+             <img src="../../../assets/proyectos.png"class="img-fluid img-proyecto">
+          </div>
+    </div>
+    </div>
 </div>

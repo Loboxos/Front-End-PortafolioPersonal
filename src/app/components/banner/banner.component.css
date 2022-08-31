@@ -13,7 +13,6 @@
     height: 650px;
     position: absolute;
     display: flex;
-    top:80px;
    background: rgba(0, 0, 0, 0.6);
 }
 .row{
@@ -22,6 +21,7 @@
     --bs-gutter-x:0;
     overflow: hidden;
     width: 100%;
+
 }
 .row h1{
     font-family: 'Roboto';
@@ -29,8 +29,7 @@
     font-weight: 300;
     font-size: 50px;
     color: #FFFFFF;
-  
-   
+   margin: 10px;   
 }
 .row h2{
     font-family: 'Roboto';
@@ -38,6 +37,7 @@
     font-weight: 300;
     font-size: 50px;
     color: #FFFFFF;
+    margin: 10px;
 }
 
 
@@ -53,7 +53,6 @@
         height: 650px;
         position: absolute;
         display: flex;
-        top:118px;
        background: rgba(0, 0, 0, 0.6);
     }
 }
@@ -65,7 +64,6 @@
         height: 650px;
         position: absolute;
         display: flex;
-        top:177px;
        background: rgba(0, 0, 0, 0.6);
     }
     
