@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LoginUsuario } from 'src/app/model/login-usuario';
-import { AuthService } from 'src/app/servicios/auth.service';
-import { TokenService } from 'src/app/servicios/token.service';
+import { LoginUsuario } from '../../model/login-usuario';
+import { AuthService } from '../../servicios/auth.service';
+import { TokenService } from '../../servicios/token.service';
 
 @Component({
   selector: 'app-iniciar-sesion',

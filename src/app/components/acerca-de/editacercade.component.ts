@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Persona } from 'src/app/model/persona.mode';
-import { PersonaService } from 'src/app/servicios/persona.service';
+import { Persona } from '../../model/persona.mode';
+import { PersonaService } from '../../servicios/persona.service';
 
 @Component({
   selector: 'app-editacercade',

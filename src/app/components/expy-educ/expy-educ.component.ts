@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { SExperienciaService } from 'src/app/servicios/s-experiencia.service';
-import { TokenService } from 'src/app/servicios/token.service';
-import { Experiencia } from 'src/app/model/experiencia';
-import { Educacion } from 'src/app/model/educacion';
-import { EducacionService } from 'src/app/servicios/educacion.service';
+import { SExperienciaService } from '../../servicios/s-experiencia.service';
+import { TokenService } from '../../servicios/token.service';
+import { Experiencia } from '../../model/experiencia';
+import { Educacion } from '../../model/educacion';
+import { EducacionService } from '../../servicios/educacion.service';
 
 @Component({
   selector: 'app-expy-educ',

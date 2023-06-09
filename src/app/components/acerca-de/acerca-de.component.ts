@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Persona } from 'src/app/model/persona.mode';
-import { PersonaService } from 'src/app/servicios/persona.service';
-import { TokenService } from 'src/app/servicios/token.service';
+import { Persona } from '../../model/persona.mode';
+import { PersonaService } from '../../servicios/persona.service';
+import { TokenService } from '../../servicios/token.service';
 
 @Component({
   selector: 'app-acerca-de',
