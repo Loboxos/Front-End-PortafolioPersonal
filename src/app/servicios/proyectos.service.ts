@@ -2,13 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Proyectos } from '../model/proyectos';
+import { environment } from 'environments/environment.prod';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProyectosService {
-URL = 'https://bkdportafoliop1.herokuapp.com/proyectos/';
-
+URL = environment.URL + 'proyectos/';
 constructor(private httpClient: HttpClient) { }
 
 public lista():Observable<Proyectos[]>{

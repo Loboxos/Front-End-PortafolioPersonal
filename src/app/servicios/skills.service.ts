@@ -2,13 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Skills } from '../model/skills';
+import { environment } from 'environments/environment.prod';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillsService {
-  URL = 'https://bkdportafoliop1.herokuapp.com/skills/';
-
+  URL = environment.URL + 'skill/';
   constructor(private httpClient : HttpClient) { }
 
   public lista(): Observable<Skills[]>{
