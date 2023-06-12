@@ -1,6 +1,6 @@
  <div *ngFor="let Persona of persona">
     <section>
-      <img src="{{Persona.img}}" id="Fp" alt="un roble">
+      <img src="../../..//assets/{{Persona.img}}" id="Fp" alt="un roble">
       <div>
       <button type="button"class="btn btn-light" routerLink="/editacercade/{{Persona.id}}"*ngIf="isLogged">
         Editar Perfil
