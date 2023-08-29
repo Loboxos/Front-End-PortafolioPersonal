@@ -8,13 +8,13 @@
         <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 parte2">
             <img src="../../../assets/Captura de pantalla (77).png"class="img-fluid img-proyecto">
         </div>
-    <div class="col-sm-12 col-md-7 col-lg-7 parte1">
+        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
            <h1>CINE(JAVA)</h1>
            <a href="https://github.com/Loboxos/proyecCine.git" style="color:rgb(51, 51, 61)" target="_blank">Click aqui para ir al Proyecto</a>
-    </div>
-    <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 parte2">
-        <img src="../../../assets/Captura de pantalla (78).png"class="img-fluid img-proyecto">
-    </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 parte2">
+           <img src="../../../assets/Captura de pantalla (78).png"class="img-fluid img-proyecto">
+        </div>
     <div>
     <button type="button"class="btn btn-dark" routerLink="/nuevoproy" *ngIf="isLogged">
         Nuevo proyecto
@@ -29,7 +29,7 @@
               <button class="btn btn-danger" (click)="delete(Proyectos.id)" *ngIf="isLogged">
                 <i class="bi bi-trash-fill"></i> BORRAR</button>
             </h1>
-            <a href="{{ Proyectos.UrlP }}">Click aqui para ir al Proyecto</a>
+            <a href="{{ Proyectos.urlP }}" style="color:rgb(51, 51, 61)" target="_blank">Click aquí para ir al Proyecto</a>
             </div>
             <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 parte2">
              <img src="../../../assets/proyectos.png"class="img-fluid img-proyecto">
